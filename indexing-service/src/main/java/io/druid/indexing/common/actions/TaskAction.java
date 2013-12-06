@@ -35,6 +35,7 @@ import java.io.IOException;
     @JsonSubTypes.Type(name = "segmentListUsed", value = SegmentListUsedAction.class),
     @JsonSubTypes.Type(name = "segmentListUnused", value = SegmentListUnusedAction.class),
     @JsonSubTypes.Type(name = "segmentNuke", value = SegmentNukeAction.class),
+    @JsonSubTypes.Type(name = "segmentMove", value = SegmentMoveAction.class),
     @JsonSubTypes.Type(name = "spawnTasks", value = SpawnTasksAction.class)
 })
 public interface TaskAction<RetType>

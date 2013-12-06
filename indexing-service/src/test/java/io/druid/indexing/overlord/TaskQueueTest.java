@@ -182,6 +182,7 @@ public class TaskQueueTest
         null,
         null,
         null,
+        null,
         new SegmentLoaderFactory(
             new OmniSegmentLoader(
                 ImmutableMap.<String, DataSegmentPuller>of(
@@ -252,6 +253,7 @@ public class TaskQueueTest
     final TaskToolboxFactory tb = new TaskToolboxFactory(
         new TaskConfig(null, null, null, null),
         new LocalTaskActionClientFactory(ts, new TaskActionToolbox(tq, tl, null, null)),
+        null,
         null,
         null,
         null,

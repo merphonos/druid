@@ -50,6 +50,7 @@ import org.joda.time.Interval;
     @JsonSubTypes.Type(name = "merge", value = MergeTask.class),
     @JsonSubTypes.Type(name = "delete", value = DeleteTask.class),
     @JsonSubTypes.Type(name = "kill", value = KillTask.class),
+    @JsonSubTypes.Type(name = "move", value = MoveTask.class),
     @JsonSubTypes.Type(name = "index", value = IndexTask.class),
     @JsonSubTypes.Type(name = "index_partitions", value = IndexDeterminePartitionsTask.class),
     @JsonSubTypes.Type(name = "index_generator", value = IndexGeneratorTask.class),
